@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Vehicle Rental</string>
+    <string name="select_vehicle">Select your own vehicle</string>
+    <string name="your_details">Your Details</string>
+    <string name="payment">Payments</string>
+    <string name ="firstdate">From</string>
+    <string name="seconddate">To</string>
+    <string name ="rentalDates">Select Rental Dates</string>
+    <string name ="customer_name">Name</string>
+    <string name ="Customer_nic">NIC</string>
+    <string name="customer_mobile">Mobile</string>
+    <string name="customer_email">Email</string>
+    <string name="Select_a_payment_method">Select a payment method</string>
+
+</resources>
