@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Vehical Rental</string>
+
+    <string name="cash">Cash Payment</string>
+    <string name="credit">Credit Card Payment</string>
+
+    <string name="vehical">Vehical ID</string>
+    <string name="NIC">Customer NIC</string>
+    <string name="date">Booked Date</string>
+    <string name="amount">Total Amount</string>
+
+    <string name="card">Credit card number</string>
+    <string name="cvv">CVV number</string>
+
+    <string name="state">Paid state</string>
+
+    <string name="confirm">If your details are correct please press the confirm button </string>
+</resources>
