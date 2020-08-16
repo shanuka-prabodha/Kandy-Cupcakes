@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">Vehical Handling</string>
+    <string name="Add_Vehical">Add Vehical </string>
+    <string name="vehical_id">Vehical ID</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="passengers">Passengers</string>
+    <string name="Transmission">Transmission</string>
+    <string name="day_price">Day Price</string>
+    <string name="btn_add">Add </string>
+    <string name="btn_upload">Upload Image</string>
+    <string name="update">Update Vehical</string>
+    <string name="btn_update">Update</string>
+
+    <string-array name="transmission">Select Transmission
+
+        <item>Automatic</item>
+        <item>Manual</item>
+    </string-array>
+
+
+
+    <string-array name="BrandNames">
+
+        <item>Alto</item>
+        <item>Premio</item>
+        <item>Axio</item>
+        <item>Vezel</item>
+        <item>Vaganar</item>
+        <item>Alion</item>
+        <item>Alion</item>
+    </string-array>
+
+    <string-array name="Transmission">
+
+        <item>Auto</item>
+        <item>Auto</item>
+        <item>Auto</item>
+        <item>Auto</item>
+        <item>Auto</item>
+        <item>Auto</item>
+        <item>Auto</item>
+    </string-array>
+
+
+    <string-array name="price">
+
+        <item>Rs.6500.00</item>
+        <item>Rs.7500.00</item>
+        <item>Rs.9500.00</item>
+        <item>Rs.9500.00</item>
+        <item>Rs.8500.00</item>
+        <item>Rs.9000.00</item>
+        <item>Rs.9500.00</item>
+    </string-array>
+
+
+    <string-array name="Passengers">
+        <item>5</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </string-array>
+
+
+
+</resources>
