@@ -1,0 +1,14 @@
+•	Shop owner can add new FAQ to the app.
+•	Shop owner can update current FAQ.
+•	Shop owner can delete the current FAQ.
+•	Shop owner can see current FAQs. 
+
+
+After loged as admin. User can go to FAQ hadndling section by click FAQ handling button.
+User can add, update and delete FAQ through this function. 
+
+If owner logged as an admin user can go to the FAQ handling section by clicking FAQ handling button. 
+In this page there have a area to add a FAQ by enter question and answer. After enter those user can click "ADD FAQ"
+button and easyly add an FAQ. There have current FAQ list below the "ADD FAQ" button. If user wants to update or delete FAQ, 
+user have long press preticular FAQ. 
+ 

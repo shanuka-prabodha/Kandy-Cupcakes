@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912584902458",
+    "firebase_url": "https://faqmadd.firebaseio.com",
+    "project_id": "faqmadd",
+    "storage_bucket": "faqmadd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912584902458:android:215672058166edcac47203",
+        "android_client_info": {
+          "package_name": "com.example.faq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912584902458-8hq4oipdv1eom65c528k0088midrrvh8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faq",
+            "certificate_hash": "cb02f6b6f3e92d6f75575a7d73a209d2dd671194"
+          }
+        },
+        {
+          "client_id": "912584902458-03cqnc19mqt269jbgvtb7f1f65ecco2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvfNgxO1JPqPZGQZvjWSzJ_ONww4dukHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912584902458-03cqnc19mqt269jbgvtb7f1f65ecco2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
