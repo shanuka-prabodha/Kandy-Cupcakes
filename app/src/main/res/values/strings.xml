@@ -2,7 +2,7 @@
     <string name="app_name">Vehical Rental</string>
 
     <string name="cash">Cash Payment</string>
-    <string name="credit">Credit Card Payment</string>
+    <string name="credit">Card Payment</string>
 
     <string name="vehical">Vehical ID</string>
     <string name="NIC">Customer NIC</string>

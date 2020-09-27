@@ -4,32 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back3"
     tools:context=".credit">
+
 
     <ImageView
         android:id="@+id/back"
-        android:layout_width="364dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="46dp"
+        android:layout_width="405dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="74dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="526dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="529dp"
         android:src="@drawable/car"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
-
-
-    <ImageView
-        android:id="@+id/credit"
-        android:layout_width="460dp"
-        android:layout_height="527dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="13dp"
-        android:src="@drawable/online1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +26,9 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="95dp"
         android:layout_marginTop="159dp"
-        android:layout_marginEnd="133dp"
+        android:layout_marginEnd="166dp"
         android:layout_marginBottom="540dp"
         android:text="@string/credit"
         android:textColor="@android:color/background_dark"
@@ -148,7 +135,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/Vehicleid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="258dp"
@@ -164,7 +151,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtNIC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="258dp"
@@ -180,7 +167,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txtdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="258dp"
@@ -196,7 +183,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txtTotalamount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="258dp"
@@ -227,23 +214,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/Ecard"
-        android:layout_width="129dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="258dp"
-        android:layout_marginTop="438dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="269dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnpay"
         android:layout_width="wrap_content"
@@ -258,30 +228,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="564dp"
-        android:layout_marginEnd="316dp"
-        android:layout_marginBottom="148dp"
-        android:text="pay with UPI"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnupi"
-        android:layout_width="89dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="608dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginBottom="89dp"
-        android:text="Choose upi"
+    <EditText
+        android:id="@+id/editcredinum"
+        android:layout_width="136dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="251dp"
+        android:ems="10"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
