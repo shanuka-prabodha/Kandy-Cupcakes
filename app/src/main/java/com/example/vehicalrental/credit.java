@@ -25,6 +25,7 @@ public class credit extends AppCompatActivity {
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
+    float amo;
 
     private static final Pattern credi_number = Pattern.compile("^[0-9]{6}");
     private static final Pattern cvv_number = Pattern.compile("^[0-9]{4}");
@@ -39,20 +40,27 @@ public class credit extends AppCompatActivity {
         final String Nic =i.getStringExtra("NIC");
         final String date =i.getStringExtra("date");
         final String amout = i.getStringExtra("amount");
-        final String vehicle = i.getStringExtra("vehicle");
+
+        float am = Float.parseFloat(amout);
+         amo =cardtax(am);
+
 
         TextView nic =  findViewById(R.id.txtNIC);
         TextView day =findViewById(R.id.txtdate);
         TextView tot = findViewById(R.id.txtTotalamount);
-        TextView vehi = findViewById(R.id.Vehicleid);
 
+
+        if(am >=15000){
+            amo = amo - discount(am);
+
+        }
 
         nic.setText(Nic);
         day.setText(date);
-        tot.setText(amout);
-        vehi.setText(vehicle);
+        tot.setText(""+amo);
 
-        final int a = Integer.parseInt(amout);
+
+
 
 
         rootNode=FirebaseDatabase.getInstance();
@@ -107,7 +115,7 @@ public class credit extends AppCompatActivity {
 
 
 
-                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,a,"Paid","Card Payment");
+                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,amo,"Paid","Card Payment");
 
                 reference.child(String.valueOf(maxid+1)).setValue(helper);
 
@@ -120,5 +128,13 @@ public class credit extends AppCompatActivity {
         });
 
 
+    }
+    public float cardtax(float value){
+
+        return(value+((value *5)/100));
+    }
+
+    public float discount(float value){
+        return(((value*3)/100));
     }
 }

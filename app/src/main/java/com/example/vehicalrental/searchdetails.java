@@ -46,7 +46,7 @@ public class searchdetails extends ArrayAdapter<paymentHelper> {
 
 
         paymentHelper pay = paymentHelperList.get(position);
-        int p = pay.getTotalamount();
+        float p = pay.getTotalamount();
         String am = String.valueOf(p);
 
 

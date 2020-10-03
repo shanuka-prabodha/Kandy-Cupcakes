@@ -114,7 +114,7 @@ public class allpayment extends AppCompatActivity {
 
         }
 
-        public void Showupdatedialog(final String maxid,final String nic, final String date,final int totalamount,final String paiedState,final String paymenttype){
+        public void Showupdatedialog(final String maxid,final String nic, final String date,final float totalamount,final String paiedState,final String paymenttype){
 
         AlertDialog.Builder dialogbuilder =new AlertDialog.Builder(this);
         LayoutInflater inflater =getLayoutInflater();
@@ -164,7 +164,7 @@ public class allpayment extends AppCompatActivity {
 
         }
 
-        private boolean updatepayment(String maxid,String nic, String date, int totalamount, String paiedState, String paymenttype){
+        private boolean updatepayment(String maxid,String nic, String date, float totalamount, String paiedState, String paymenttype){
             reference=rootNode.getReference("Payment").child(maxid);
             paymentHelper pay = new paymentHelper(maxid,nic,date,totalamount,paiedState,paymenttype);
             reference.setValue(pay);

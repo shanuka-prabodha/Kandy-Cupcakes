@@ -21,6 +21,8 @@ public class cash extends AppCompatActivity {
     FirebaseDatabase rootNode;
     DatabaseReference reference;
 
+    float amo;
+
     long maxid =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,19 +33,24 @@ public class cash extends AppCompatActivity {
         final String Nic =i.getStringExtra("NIC");
         final String date =i.getStringExtra("date");
         final String amout = i.getStringExtra("amount");
-        final String vehicle = i.getStringExtra("vehicle");
+
 
         TextView nic =  findViewById(R.id.txtnic);
         TextView day =findViewById(R.id.txtdate);
         TextView tot = findViewById(R.id.txtamount);
-        TextView vehi = findViewById(R.id.txtvehical);
+
 
       nic.setText(""+Nic);
       day.setText(""+date);
       tot.setText(""+amout);
-      vehi.setText(""+vehicle);
 
-     final int a = Integer.parseInt(amout);
+
+    amo =Float.parseFloat(amout);
+
+        if(amo >=15000){
+            amo = amo - discount(amo);
+
+        }
 
 
         rootNode=FirebaseDatabase.getInstance();
@@ -70,7 +77,7 @@ public class cash extends AppCompatActivity {
 
 
 
-                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,a,"Not Paid","Cash Payment");
+                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,amo,"Not Paid","Cash Payment");
 
                 reference.child(String.valueOf(maxid+1)).setValue(helper);
 
@@ -84,5 +91,9 @@ public class cash extends AppCompatActivity {
 
 
 
+    }
+
+    private float discount(float value){
+        return(((value*3)/100));
     }
 }

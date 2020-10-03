@@ -99,7 +99,7 @@ public class updatepayment extends AppCompatActivity {
     }
 
 
-    public void Showupdatedialog(final String maxid,final String nic, final String date,final int totalamount,final String paiedState,final String paymenttype){
+    public void Showupdatedialog(final String maxid,final String nic, final String date,final float totalamount,final String paiedState,final String paymenttype){
 
         AlertDialog.Builder dialogbuilder =new AlertDialog.Builder(this);
         LayoutInflater inflater =getLayoutInflater();
@@ -110,11 +110,11 @@ public class updatepayment extends AppCompatActivity {
         final Button update = (Button)dialogView.findViewById(R.id.updatebtn);
 
         final Button delete  = (Button)dialogView.findViewById(R.id.deletbtn);
-        TextView NIC = findViewById(R.id.txtNic);
+        TextView NIC = dialogView.findViewById(R.id.txtNic);
         NIC.setText(nic);
-        TextView Date = findViewById(R.id.txtdate);
+        TextView Date = dialogView.findViewById(R.id.txtdate);
         Date.setText(date);
-        TextView tamount = findViewById(R.id.txtamount);
+        TextView tamount = dialogView.findViewById(R.id.txtamount);
         tamount.setText(""+totalamount);
 
 
@@ -149,7 +149,7 @@ public class updatepayment extends AppCompatActivity {
 
     }
 
-    private boolean updatepayment(String maxid,String nic, String date, int totalamount, String paiedState, String paymenttype){
+    private boolean updatepayment(String maxid,String nic, String date, float totalamount, String paiedState, String paymenttype){
         reference=rootNode.getReference("Payment").child(maxid);
         paymentHelper pay = new paymentHelper(maxid,nic,date,totalamount,paiedState,paymenttype);
         reference.setValue(pay);

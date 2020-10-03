@@ -2,7 +2,7 @@ package com.example.vehicalrental;
 
 public class paymentHelper {
   public  String nic,date,paiedState,paymenttype;
-    public int totalamount;
+    public float totalamount;
     String maxid;
 
 
@@ -10,7 +10,7 @@ public class paymentHelper {
     public paymentHelper() {
     }
 
-    public paymentHelper(String maxid,String nic, String date, int totalamount, String paiedState, String paymenttype) {
+    public paymentHelper(String maxid,String nic, String date, float totalamount, String paiedState, String paymenttype) {
         this.maxid = maxid;
         this.nic = nic;
         this.date = date;
@@ -27,7 +27,7 @@ public class paymentHelper {
         return date;
     }
 
-    public int getTotalamount() {
+    public float getTotalamount() {
         return totalamount;
     }
 
@@ -43,7 +43,7 @@ public class paymentHelper {
         this.date = date;
     }
 
-    public void setTotalamount(int totalamount) {
+    public void setTotalamount(float totalamount) {
         this.totalamount = totalamount;
     }
 

@@ -36,7 +36,7 @@ public class paymentList extends ArrayAdapter<paymentHelper> {
         TextView method = (TextView)listviewpayment.findViewById(R.id.txtpaymethod);
 
         paymentHelper pay = paymentHelperList.get(position);
-        int p =pay.getTotalamount();
+        float p =pay.getTotalamount();
         String am =String.valueOf(p);
 
 

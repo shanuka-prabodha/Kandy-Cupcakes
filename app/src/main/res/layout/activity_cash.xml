@@ -38,22 +38,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="251dp"
-        android:layout_marginBottom="421dp"
-        android:text="@string/vehical"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,22 +78,6 @@
         android:layout_marginEnd="223dp"
         android:layout_marginBottom="248dp"
         android:text="@string/amount"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtvehical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="277dp"
-        android:layout_marginTop="286dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="421dp"
-        android:text="TextView"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
