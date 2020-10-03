@@ -40,17 +40,20 @@ public class cash extends AppCompatActivity {
         TextView tot = findViewById(R.id.txtamount);
 
 
-      nic.setText(""+Nic);
-      day.setText(""+date);
-      tot.setText(""+amout);
-
-
-    amo =Float.parseFloat(amout);
+        amo =Float.parseFloat(amout);
 
         if(amo >=15000){
             amo = amo - discount(amo);
 
         }
+
+
+      nic.setText(""+Nic);
+      day.setText(""+date);
+      tot.setText(""+amo);
+
+
+
 
 
         rootNode=FirebaseDatabase.getInstance();
