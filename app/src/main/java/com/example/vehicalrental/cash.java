@@ -77,7 +77,7 @@ public class cash extends AppCompatActivity {
 
 
 
-                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,amo,"Not Paid","Cash Payment");
+                paymentHelper helper = new paymentHelper(String.valueOf(maxid+1),Nic,date,amo,"Not Paid","Cash  Payment");
 
                 reference.child(String.valueOf(maxid+1)).setValue(helper);
 

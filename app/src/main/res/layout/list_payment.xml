@@ -30,14 +30,14 @@
 
     <TextView
         android:id="@+id/txtpaysate"
-        android:layout_width="77dp"
+        android:layout_width="wrap_content"
         android:layout_height="86dp"
-        android:padding="25dp"
+        android:padding="10dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/txtpaymethod"
-        android:layout_width="97dp"
+        android:layout_width="wrap_content"
         android:layout_height="59dp"
         android:padding="5dp"
         android:text="TextView" />
